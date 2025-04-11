@@ -36,7 +36,7 @@ Config = {
 ## Add-On Vehicle Images 🖼️
 1. Open the folder: `web/images/`
 2. Add images named exactly as your vehicle models (e.g.: `police.png`)
-3. Supported formats: PNG, JPG, WebP
+3. Supported formats: PNG
 4. Recommended size: `512x512px` (will auto-scale)
 
 Example structure:
