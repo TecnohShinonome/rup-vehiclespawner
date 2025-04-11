@@ -53,8 +53,7 @@ resources/
 ## Contributing 🤝
 Contributions welcome! Please follow these steps:
 1. Fork the repository
-2. Create a branch
-3. Commit your changes
+2. Create a pull request
 4. Ill review 0-0
 
 ## License 📄
