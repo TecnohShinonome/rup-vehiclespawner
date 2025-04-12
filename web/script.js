@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 });
 
+// FiveM Open UI
 function openUI() {
    document.body.style.display = 'block';
    const dashboard = document.querySelector('.dashboard-container');
@@ -39,6 +40,7 @@ function openUI() {
    void dashboard.offsetHeight;
 }
 
+// FiveM Close UI
 function closeUI() {
    const dashboard = document.querySelector('.dashboard-container');
    dashboard.classList.remove('visible');
@@ -137,6 +139,7 @@ function showAllVehicles() {
    }, 50);
 }
 
+// Top right of UI, Displays how many vehicles in that category
 function updateResultsCount(count) {
    document.getElementById('results-count').textContent = `${count} vehicles available`;
 }
@@ -187,6 +190,7 @@ function showVehiclesInCategory(category) {
    }, 50);
 }
 
+// Spawn vehicle, see client.lua for event
 function spawnVehicle(model) {
    fetch(`https://${GetParentResourceName()}/spawnVehicle`, {
       method: 'POST',
@@ -241,7 +245,8 @@ function filterVehicles(searchTerm) {
          Object.keys(vehicleModels).forEach(category => {
             filtered[category] = vehicleModels[category]
                .filter(vehicle => vehicle.model.toLowerCase().includes(searchTerm))
-               .sort((a, b) => a.model.localeCompare(b.model));
+               .sort((a, b) => a.model.localeCompare(b.model))
+               .map(vehicle => ({ ...vehicle, category: category }));
          });
 
          Object.entries(filtered).forEach(([category, vehicles]) => {
