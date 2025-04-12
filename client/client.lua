@@ -32,13 +32,14 @@ local function fetchVehicleModels()
     local categorizedVehicles = {}
 
     for _, model in ipairs(models) do
-        local class = GetVehicleClassFromName(model)
+        local class = GetVehicleClassFromName(model) --[[ Grab all vehicle models in game, including add-on! ]]
         local className = vehicleCategories[class] or "Unknown"
 
         if not categorizedVehicles[className] then
             categorizedVehicles[className] = {}
         end
 
+        --[[ Insert all vehicles in a table, might be a better way but it works and I like it more 0-0 ]]
         table.insert(categorizedVehicles[className], { model = model})
     end
 
