@@ -2,7 +2,7 @@
 
 A modern, intuitive vehicle spawner menu for FiveM servers with category management and add-on vehicle support.
 
-![Menu Preview](./web/images/menu_preview.jpg) *Add your own preview images*
+![Menu Preview](./web/images/menu_preview.png) *Add your own preview images*
 
 ## Features 🌟
 - 🗂️ **Category System**: Organized vehicle classes (Cars, Helicopters, Planes, etc.)
@@ -12,6 +12,9 @@ A modern, intuitive vehicle spawner menu for FiveM servers with category managem
 - 🔒 **Permission System**: Admin-restricted access
 - 🖼️ **Custom Vehicle Images**: Support for add-on vehicle previews
 - ⚡ **Optimized Performance**: Smooth animations and lazy loading
+
+## Dependencies 📦
+- [ox_lib](https://github.com/overextended/ox_lib) (Required)
 
 ## Installation 📦
 1. Place `rup-vehiclespawner` in your `resources` directory
@@ -24,7 +27,9 @@ ensure rup-vehiclespawner
 ## Configuration ⚙️
 ```lua
 Config = {
-    Command = 'vehiclemenu', --[[ Command name in game, can make whatever 0-0 ]]
+    --[[ Command Config ]]
+    Command = 'vehiclemenu',       --[[ Command name in game, can make whatever 0-0 ]]
+    AdminGroups = { 'group.admin'} --[[ Add More If needed, its a table ]]
 
     --[[ Vehicle Config ]]
     Fuel = 'standalone', --[[ legacy, ox, cdn, standalone]]

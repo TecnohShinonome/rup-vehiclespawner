@@ -1,5 +1,7 @@
 Config = {
-    Command = 'vehiclemenu', --[[ Command name in game, can make whatever 0-0 ]]
+    --[[ Command Config ]]
+    Command = 'vehiclemenu',       --[[ Command name in game, can make whatever 0-0 ]]
+    AdminGroups = { 'group.admin'} --[[ Add More If needed, its a table ]]
 
     --[[ Vehicle Config ]]
     Fuel = 'standalone', --[[ legacy, ox, cdn, standalone]]

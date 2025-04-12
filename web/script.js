@@ -209,7 +209,9 @@ function filterVehicles(searchTerm) {
    vehicleList.style.opacity = '0';
    setTimeout(() => {
       vehicleList.innerHTML = '';
-      const allVehicles = Object.values(vehicleModels).flat();
+      const allVehicles = Object.entries(vehicleModels).flatMap(([category, vehicles]) =>
+         vehicles.map(vehicle => ({ ...vehicle, category: category})));
+
       const filteredVehicles = allVehicles
          .filter(vehicle => vehicle.model.toLowerCase().includes(searchTerm))
          .sort((a, b) => a.model.localeCompare(b.model));
@@ -246,7 +248,7 @@ function filterVehicles(searchTerm) {
             filtered[category] = vehicleModels[category]
                .filter(vehicle => vehicle.model.toLowerCase().includes(searchTerm))
                .sort((a, b) => a.model.localeCompare(b.model))
-               .map(vehicle => ({ ...vehicle, category: category }));
+               .map(vehicle => ({ ...vehicle, category: category}));
          });
 
          Object.entries(filtered).forEach(([category, vehicles]) => {
