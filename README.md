@@ -2,7 +2,7 @@
 
 A modern, intuitive vehicle spawner menu for FiveM servers with category management and add-on vehicle support.
 
-![Menu Preview](./web/images/menu_preview.png) *Add your own preview images*
+![Menu Preview](./web/images/menu_preview.png)
 
 ## Features 🌟
 - 🗂️ **Category System**: Organized vehicle classes (Cars, Helicopters, Planes, etc.)
