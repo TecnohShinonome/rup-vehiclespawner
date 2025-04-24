@@ -93,6 +93,9 @@ RegisterNUICallback('spawnVehicle', function(data, cb)
     end
 
     SetModelAsNoLongerNeeded(model)
+    if Config.Discord.Enabled then
+        TriggerServerEvent('Rup-VehicleSpawner:DiscordLog', data)
+    end
     cb('ok')
 end)
 

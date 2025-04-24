@@ -55,6 +55,14 @@ resources/
             └── fallback.png
 ```
 
+## Discord License Types 🔐
+In `config.lua`, there's a Discord configuration section that includes a `LicenseType` option.  
+This is an integer ranging from `0` to `8`, representing different identifier types.
+
+You can find the full list of license types here:  
+[License Types](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayerIdentifiers/#identifier-types)
+
+
 ## Contributing 🤝
 Contributions welcome! Please follow these steps:
 1. Fork the repository
