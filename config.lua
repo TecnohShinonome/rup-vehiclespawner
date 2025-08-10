@@ -3,7 +3,7 @@ Config = {
     Debug = false, --[[ Prints and what not :P ]]
 
     --[[ Command Config ]]
-    Command = 'vehiclemenu',        --[[ Command name in game, can make whatever 0-0 ]]
+    Command = 'carlist',        --[[ Command name in game, can make whatever 0-0 ]]
     AdminGroups = { 'group.admin'}, --[[ Add More If needed, its a table ]]
 
     --[[ Vehicle Config ]]
@@ -13,7 +13,7 @@ Config = {
 
     --[[ Discord Config ]]
     Discord = {
-        Enabled = true,
+        Enabled = false,
         Webhook = 'ADD_WEBHOOK_HERE', --[[ Add your webhook or disable the webhook above! ]]
         Icon = 'https://i.imgur.com/OZyXBv0.png',
         LicenseType = 0, --[[ readme.md if you dont know what this is... ]]
