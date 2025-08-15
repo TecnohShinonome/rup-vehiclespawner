@@ -7,14 +7,14 @@ Config = {
     AdminGroups = { 'group.admin'}, --[[ Add More If needed, its a table ]]
 
     --[[ Vehicle Config ]]
-    Fuel = 'standalone', --[[ legacy, ox, cdn, standalone]]
-    Keys = 'standalone', --[[ qb, qbx, standalone]]
+    Fuel = 'legacy', --[[ legacy, ox, cdn, standalone]]
+    Keys = 'qb', --[[ qb, qbx, standalone]]
     Warp = true,         --[[ Should player warp into the vehicle on spawn, recommend keeping true :P ]]
 
     --[[ Discord Config ]]
     Discord = {
-        Enabled = false,
-        Webhook = 'ADD_WEBHOOK_HERE', --[[ Add your webhook or disable the webhook above! ]]
+        Enabled = true,
+        Webhook = 'https://discord.com/api/webhooks/1402144150907781120/UWExtOHTMtLB6uE15QSFLYJ2_bUngXuDcopTn2ewGqECHA2Uv9JrmuIDCz9kxVApOq_D', --[[ Add your webhook or disable the webhook above! ]]
         Icon = 'https://i.imgur.com/OZyXBv0.png',
         LicenseType = 0, --[[ readme.md if you dont know what this is... ]]
     },
