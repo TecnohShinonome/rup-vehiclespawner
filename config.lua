@@ -7,8 +7,8 @@ Config = {
     AdminGroups = { 'group.admin'}, --[[ Add More If needed, its a table ]]
 
     --[[ Vehicle Config ]]
-    Fuel = 'legacy', --[[ legacy, ox, cdn, standalone]]
-    Keys = 'qb', --[[ qb, qbx, standalone]]
+    Fuel = 'ps', --[[ legacy, ps, ox, cdn, standalone]]
+    Keys = 'standalone', --[[ 1qb, qbx, standalone]]
     Warp = true,         --[[ Should player warp into the vehicle on spawn, recommend keeping true :P ]]
 
     --[[ Discord Config ]]

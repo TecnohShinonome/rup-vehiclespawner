@@ -81,6 +81,7 @@ RegisterNUICallback('spawnVehicle', function(data, cb)
 
     local fuelSystems = {
         ['legacy'] = function(veh) exports['LegacyFuel']:SetFuel(veh, 100.0) end,
+        ['ps'] = function(veh) exports['ps-fuel']:SetFuel(veh, 100.0) end,
         ['cdn'] = function(veh) exports['cdn-fuel']:SetFuel(veh, 100.0) end,
         ['ox'] = function(veh) Entity(veh).state.fuel = 100.0 end,
         ['standalone'] = function(veh) SetVehicleFuelLevel(veh, 100.0) end
